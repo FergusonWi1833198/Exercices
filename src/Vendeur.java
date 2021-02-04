@@ -40,30 +40,4 @@ public class Vendeur extends Employe {
     public BigDecimal calculerPaie(){
         return getSalaire().add(tauxCommission.multiply(volumeVente));
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @Override
-    public String toString(){
-        String description = "";
-        description += getNom() + " " + getPrenom() + " habite au " + getAdresse() + " et gagne " +
-                getSalaire().add(tauxCommission.multiply(volumeVente)).toString();
-        return description;
-    }
 }

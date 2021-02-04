@@ -11,17 +11,10 @@ public class Main {
 
         Exec eve = new Exec("Edwards", "Eve", "1001 rue Lys", BigDecimal.valueOf(85_000), BigDecimal.valueOf(10_000));
 
-        System.out.println(alice.calculerPaie().toString());
-        System.out.println(diane.calculerPaie().toString());
-        System.out.println(eve.calculerPaie().toString());
-
-
-
-
-        System.out.println(alice.toString());
-        System.out.println(bernard.toString());
-        System.out.println(charlie.toString());
-        System.out.println(diane.toString());
-        System.out.println(eve.toString());
+        System.out.println(alice);
+        System.out.println(bernard);
+        System.out.println(charlie);
+        System.out.println(diane);
+        System.out.println(eve);
     }
 }

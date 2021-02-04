@@ -58,16 +58,9 @@ public class Employe {
         return salaire;
     }
 
-
-
-
-
-
-
-
-
     @Override
     public String toString(){
-        return "L'employé " + getPrenom() + " " + getNom() + " habite au " + getAdresse() + " et gagne " + getSalaire().toPlainString() + "$ annuellement.";
+        return "L'employé " + getPrenom() + " " + getNom() + " habite au " + getAdresse() +
+                " et gagne " + calculerPaie().toPlainString() + "$ annuellement.";
     }
 }
