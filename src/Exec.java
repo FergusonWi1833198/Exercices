@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class Exec extends Employe {
+public final class Exec extends Employe implements Patron{
     private BigDecimal bonus;
 
     public Exec(String nom, String prenom, String adresse, BigDecimal salaire, BigDecimal bonus) {
@@ -19,5 +19,13 @@ public class Exec extends Employe {
     @Override
     public BigDecimal calculerPaie() {
         return getSalaire().add(bonus);
+    }
+
+    public void organiserReunion() {
+
+    }
+
+    public Personne choisirCandidat(Personne[] candidats) {
+        return null;
     }
 }
